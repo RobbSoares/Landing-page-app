@@ -4,9 +4,9 @@
     color: white;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    padding-right: 20rem;
-    padding-left: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding-right: 10rem;
+    padding-left: 10rem;
 
     .card {
     

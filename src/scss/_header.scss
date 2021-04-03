@@ -13,8 +13,13 @@
         a:not(:last-child) {
             margin-right: 2.8125rem;
         }
+
         a {
             color: rgb(255, 255, 255);
+
+            &:hover {
+                opacity: .7;
+            }
         }
     }
 
@@ -24,8 +29,15 @@
             height: 1.875rem;
             margin-right: 1.25rem;
        }
-    }
 
+       img {
+           &:hover {
+               cursor: pointer;
+           }
+       }
+       
+    }
+    
     @include breakpoint-down(medium) {
         padding: 2rem;
 

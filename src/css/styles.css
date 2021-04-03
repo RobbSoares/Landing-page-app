@@ -47,10 +47,18 @@ p {
   color: white;
 }
 
+.header .links a:hover {
+  opacity: .7;
+}
+
 .header .social-media :not(:last-child) {
   width: 1.875rem;
   height: 1.875rem;
   margin-right: 1.25rem;
+}
+
+.header .social-media img:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 63.9375em) {
@@ -162,7 +170,7 @@ p {
 
 .phone-section {
   background: #faf9f9;
-  height: 50rem;
+  height: 45rem;
   display: flex;
   justify-content: center;
 }
@@ -178,6 +186,7 @@ p {
   height: 36.25rem;
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .phone-section .grid .text-spec {
@@ -326,9 +335,9 @@ p {
   background-color: #42c27e;
   color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-  padding-right: 20rem;
-  padding-left: 20rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
 .text-blocks .card {
@@ -446,7 +455,7 @@ p {
   border: none;
   margin: 0;
   color: #42c27e;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 63.9375em) {

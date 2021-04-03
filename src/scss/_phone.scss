@@ -1,7 +1,7 @@
 .phone-section {
 
     background: rgb(250, 249, 249);
-    height: 50rem;  
+    height: 45rem;  
     display: flex;
     justify-content: center;
 
@@ -14,11 +14,10 @@
 
         .phone-image {
             height: 36.25rem;
-
             display: flex;
             justify-content: center;
-
             
+            margin-top: 5rem;
         }
 
         .text-spec {
@@ -111,6 +110,7 @@
 
     @include breakpoint-down(medium) {
         height: 100%;
+        
         .grid {
             margin-top: 0.625rem;
             grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
