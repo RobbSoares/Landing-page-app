@@ -4,8 +4,10 @@
     color: white;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    padding-top: 5rem;
     padding-right: 10rem;
+    padding-bottom: 5rem;
     padding-left: 10rem;
 
     .card {
