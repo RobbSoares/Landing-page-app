@@ -1,0 +1,41 @@
+.developer-text {
+    height: 23.125rem;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    .dev-text {
+        width: 51.25rem;
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .dev-name {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #4b4848;
+        margin-bottom: 10px;
+    }
+
+    
+    @include breakpoint-down(medium) {
+        height: 100%;
+        padding: 0.125rem;
+        padding-bottom: 1rem;
+        
+        .dev-text {
+            padding-top: 1rem;
+            width: 80%;
+            word-wrap: break-word;
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+            margin-bottom: 3.125rem;
+        }
+        
+        
+    }
+}

@@ -1,0 +1,48 @@
+.text-blocks {
+    height: 100%;
+    background-color: $green;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    padding-right: 20rem;
+    padding-left: 20rem;
+
+    .card {
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        i {
+            margin-top: 1.875rem;
+            font-size: 2.1875rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-top: 3.125rem;
+        }
+
+        p {
+            color: $white;
+            text-align: center;
+            width: 21.75rem;
+            line-height: 1.75rem;
+            margin-top: 1rem;
+            padding: 0.9375rem;
+        }
+    }
+
+    @include breakpoint-down(large) {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+
+        p {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+}

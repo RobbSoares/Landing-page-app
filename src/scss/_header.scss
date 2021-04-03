@@ -1,0 +1,60 @@
+.header {
+    background-color: $green;
+    padding: 3.125rem 12.5rem 3.125rem 12.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    .menu {
+        display: none;
+    }
+
+    .links {
+        a:not(:last-child) {
+            margin-right: 2.8125rem;
+        }
+        a {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .social-media {
+        .images:not(:last-child) {
+            width: 1.875rem;
+            height: 1.875rem;
+            margin-right: 1.25rem;
+       }
+    }
+
+    @include breakpoint-down(medium) {
+        padding: 2rem;
+
+        .menu {
+            display: block;
+            position: relative;
+            cursor: pointer;
+
+            p {
+                position: absolute;
+                color: white;
+                top: -15px;
+                right: 20px;
+                margin-bottom: 1rem;
+                font-size: 30px;
+            }
+        }
+
+
+        .links {
+            visibility: hidden;
+        }
+
+        .social-media {
+            visibility: hidden;
+        }
+
+        height: .125rem;
+    }
+
+    
+}

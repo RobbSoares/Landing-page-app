@@ -1,0 +1,33 @@
+.footer {
+    height: 17.9375rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+   
+    align-items: center;
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        
+        margin-bottom: 3.125rem;
+    }
+
+    .author {
+        text-align: center;
+    }
+
+    img {
+        &:not(:last-child){
+            margin-right: 3.75rem;
+
+        }
+    }    
+
+    @include breakpoint-down(small) {
+        .author {
+            font-size: 0.75rem
+        }
+    }
+}

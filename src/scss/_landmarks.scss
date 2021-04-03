@@ -1,0 +1,27 @@
+.landmarks {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 6.25rem;
+    
+    background-color: $almostWhite;
+    // padding: 0 17.1875rem 0 17.1875rem;
+    
+    img {
+
+        height: 2.5rem;
+    }
+
+    @include breakpoint-down(medium) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+
+        img {
+            margin-left: 1rem;
+        }
+    }
+}
