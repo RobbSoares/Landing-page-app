@@ -1,10 +1,11 @@
 .developer-text {
     height: 23.125rem;
-    display: flex;
 
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     text-align: center;
     
     .dev-text {
@@ -35,7 +36,5 @@
             line-height: 2.25rem;
             margin-bottom: 3.125rem;
         }
-        
-        
     }
 }

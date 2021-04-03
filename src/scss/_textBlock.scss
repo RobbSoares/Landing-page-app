@@ -4,7 +4,7 @@
     color: white;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 5rem;
     padding-right: 10rem;
     padding-bottom: 5rem;
@@ -39,11 +39,14 @@
     }
 
     @include breakpoint-down(large) {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
+        padding-left: 0;    
+        padding-right: 0;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 
         p {
             width: 100%;
+            padding: 0;
             margin-bottom: 2rem;
         }
     }

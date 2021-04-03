@@ -63,27 +63,7 @@ p {
 
 @media (max-width: 63.9375em) {
   .header {
-    padding: 2rem;
-    height: .125rem;
-  }
-  .header .menu {
-    display: block;
-    position: relative;
-    cursor: pointer;
-  }
-  .header .menu p {
-    position: absolute;
-    color: white;
-    top: -15px;
-    right: 20px;
-    margin-bottom: 1rem;
-    font-size: 30px;
-  }
-  .header .links {
-    visibility: hidden;
-  }
-  .header .social-media {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -170,28 +150,27 @@ p {
 
 .phone-section {
   background: #faf9f9;
-  height: 45rem;
+  height: 47rem;
   display: flex;
   justify-content: center;
 }
 
 .phone-section .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 1fr 2fr;
   height: 80vh;
+  align-items: center;
 }
 
 .phone-section .grid .phone-image {
   height: 36.25rem;
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
 }
 
 .phone-section .grid .text-spec {
   height: 36.25rem;
-  margin-left: 6rem;
+  margin-left: 10rem;
 }
 
 .phone-section .grid .text-spec h1, .phone-section .grid .text-spec p {
@@ -200,18 +179,17 @@ p {
 
 .phone-section .grid .text-spec h1 {
   margin-bottom: 2.5rem;
-  margin-top: 2rem;
 }
 
 .phone-section .grid .text-spec p {
   line-height: 2rem;
-  margin-bottom: 3.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .phone-section .grid .text-spec ul {
   list-style: none;
   color: #767474;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .phone-section .grid .text-spec ul li {
@@ -234,11 +212,16 @@ p {
   transition: all 300ms ease-in-out;
 }
 
+.phone-section .grid .text-spec .button:hover {
+  color: #42c27e;
+  border-color: #42c27e;
+}
+
 .phone-section .grid .text-spec .button__border {
   border: 0.125rem solid #525252;
   padding: 1.25rem 0.9375rem;
   color: #525252;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .phone-section .grid .text-spec .button__border img {
@@ -256,11 +239,6 @@ p {
   margin-left: 0.625rem;
 }
 
-.phone-section .grid .text-spec .button:hover {
-  color: #42c27e;
-  border-color: #42c27e;
-}
-
 .phone-section .grid .text-spec img {
   align-self: center;
   height: 40rem;
@@ -272,7 +250,6 @@ p {
     height: 100%;
   }
   .phone-section .grid {
-    margin-top: 0.625rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     height: 100%;
   }
@@ -285,7 +262,7 @@ p {
     width: 100%;
   }
   .phone-section .grid .text-spec h1 {
-    margin-top: 1.7 rem;
+    margin-top: 3rem;
     font-size: 1.7rem;
   }
   .phone-section .grid .text-spec p {
@@ -299,7 +276,8 @@ p {
     margin-top: 3.125rem;
   }
   .phone-section .grid .text-spec .button {
-    width: 12.5rem;
+    text-align: center;
+    width: 90%;
     display: block;
     padding: 0;
     text-align: center;
@@ -326,6 +304,7 @@ p {
     padding: 0;
   }
   .landmarks img {
+    height: 2rem;
     margin-left: 1rem;
   }
 }
@@ -335,7 +314,7 @@ p {
   background-color: #42c27e;
   color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   padding-top: 5rem;
   padding-right: 10rem;
   padding-bottom: 5rem;
@@ -371,11 +350,14 @@ p {
 
 @media (max-width: 87.4375em) {
   .text-blocks {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   }
   .text-blocks p {
     width: 100%;
+    padding: 0;
     margin-bottom: 2rem;
   }
 }
@@ -436,13 +418,13 @@ p {
 }
 
 .email input {
+  display: flex;
   padding: 1rem;
   border: none;
   width: 18.75rem;
   display: inline;
   margin: 0;
   height: 3.125rem;
-  margin: 0;
   outline: none;
 }
 
@@ -458,7 +440,7 @@ p {
   margin: 0;
   color: #42c27e;
   background-color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -473,7 +455,6 @@ p {
   display: flex;
   flex-direction: center;
   justify-content: center;
-  align-items: center;
   align-items: center;
 }
 

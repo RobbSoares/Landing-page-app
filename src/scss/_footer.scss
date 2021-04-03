@@ -4,13 +4,10 @@
     flex-direction: center;
     justify-content: center;
     align-items: center;
-   
-    align-items: center;
 
     .icons {
         display: flex;
         justify-content: center;
-        
         margin-bottom: 3.125rem;
     }
 
@@ -21,7 +18,6 @@
     img {
         &:not(:last-child){
             margin-right: 3.75rem;
-
         }
     }    
 

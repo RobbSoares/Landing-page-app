@@ -39,33 +39,7 @@
     }
     
     @include breakpoint-down(medium) {
-        padding: 2rem;
-
-        .menu {
-            display: block;
-            position: relative;
-            cursor: pointer;
-
-            p {
-                position: absolute;
-                color: white;
-                top: -15px;
-                right: 20px;
-                margin-bottom: 1rem;
-                font-size: 30px;
-            }
-        }
-
-
-        .links {
-            visibility: hidden;
-        }
-
-        .social-media {
-            visibility: hidden;
-        }
-
-        height: .125rem;
+        display: none;      
     }
 
     

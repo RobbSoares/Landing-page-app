@@ -15,17 +15,14 @@
     }
 
     input {
-
+        display: flex;
         padding: 1rem;
-        
         border: none;
         width: 18.75rem;
         display: inline;
         margin: 0;
         height: 3.125rem;
-        margin: 0;
         outline: none;
-
 
         &::placeholder {
             color: $green;
@@ -40,7 +37,7 @@
         margin: 0;
         color: $green;
         background-color: white;
-        font-size: .8rem;
+        font-size: 1.2rem;
         cursor: pointer;
     }
     
@@ -48,6 +45,5 @@
         input {
             width: 75%;
         }
-        
     }
 }
