@@ -1,0 +1,3 @@
+
+Tempo gasto com pesquisa: 2 horas.
+Tempo gasto em desenvolvimento: 14 horas.
